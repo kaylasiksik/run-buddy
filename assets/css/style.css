@@ -1,7 +1,13 @@
 body {
     font-family: Helvetica, Arial, sans-sherif;
     color: #39a6b2;
-    }
+ }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* apply styles to header*/
 header {
@@ -36,11 +42,8 @@ header nav ul li a {
     font-size: 22px;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
+
 
 footer {
     background: #fce138;
@@ -55,12 +58,73 @@ footer h2 {
     margin: 0;
   }
 
-  footer div {
+footer div {
     float: right;
     line-height: 1.5;
     text-align: right;
   }
 
-  footer a {
+footer a {
     color: #024e76;
   }
+
+section {
+    padding: 60px;
+  }
+
+/* HERO FORM START */
+.hero {
+    background-image: url("../../../assets/images/hero-bg.jpg");
+    height: 600px; 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-form {
+    background-color: #fce138;
+    padding: 20px;
+    width: 500px;
+    color: #024e76;
+    border: 3px solid #024e76;
+    position: absolute;
+    bottom: 120px;
+    right: 140px;
+}
+
+.hero-form h3 {
+    font-size: 24px;
+    margin: 0px;
+}
+
+.hero-form p {
+    margin: 5px 0 15px 0;
+}
+
+/*  border property is set to a narrow 1px border to emphasize the sign-up requests.
+    display property instructs the browser to render the element either as a <block> or inline. */
+.form-input {
+    border: 1px solid #024e76;
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: #024e76;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Adding some horizontal spacing for the <label> element in the radio button elements helps 
+    the user not misinterpret which selection is for which answer. */
+.hero-form label {
+    margin: 0 5px;
+}
+
+.hero-form button {
+    color: #fce138;
+    background-color: #024e76;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+/* HERO FORM END */
